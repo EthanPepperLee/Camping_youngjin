@@ -1,6 +1,8 @@
 package com.jspproject.homecontroller;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -54,25 +56,16 @@ public class FrontController extends HttpServlet {
 		String com = uri.substring(conPath.length());
 		
 		switch(com) {
+		
 		case("/host_review_list.do"):
 			command = new HostReviewList_Command();
 			command.execute(request, response);
 			viewPage = "HostReviewList.jsp";
 			break;
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+		RequestDispatcher dispatcher = request.getRequestDispatcher(viewPage);
+		dispatcher.forward(request, response);
 		
 	}
 

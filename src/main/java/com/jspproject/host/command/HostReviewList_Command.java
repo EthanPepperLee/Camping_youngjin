@@ -7,8 +7,9 @@ public class HostReviewList_Command implements Host_Command {
 
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) {
-		// TODO Auto-generated method stub
-
+		String hSeq = request.getParameter(null);
+		
+		
 	}
 
 }

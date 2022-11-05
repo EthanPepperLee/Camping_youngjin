@@ -6,13 +6,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>후기 관리</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <link rel="stylesheet" href="css/Design.css">
 <link rel="stylesheet" href="css/HostCard.css">
+<link rel="stylesheet" href="css/TableCenter.css">
 </head>
 <body>
-<div class="container py-4">
+<div class="container py-2">
 <nav class="navbar navbar-expand-md bg-light">
 	<div class="container-fluid">
 		<a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
@@ -51,6 +52,39 @@
 </div>
 
 
+<div class="container py-4">
+<nav class="navbar navbar-expand-md bg-light">
+	<div class="container-fluid">
+		<h2 class="display-9 fw-bold">후기관리</h2>
+		<a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+		<select name="camp">
+		<option value="">캠핑장</option>
+		<option value="">캠핑장</option>
+		<option value="">캠핑장</option>
+		</select>
+		</a>
+		&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;
+		<div class="input-group mb-2" style="width:50%">
+			<input type="text" class="form-control" placeholder="검색어를 입력하세요" aria-label="Recipient's username" aria-describedby="button-addon2">
+			<button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+		</div>
+	</div>
+</nav>
+</div>
+
+<div class="bg-white" style="text-align:center">
+	<table class="table table-dark table-hover center" border="1" style="width:70%">
+		<tr>
+		<th>후기번호</th><th>캠핑장</th><th>작성자 ID</th><th>작성자명</th><th>후기제목</th><th>후기일자</th>
+		</tr>
+	</table>
+</div>
+
+
+
+
 
 
 
@@ -59,6 +93,5 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
 </body>
 </html>
